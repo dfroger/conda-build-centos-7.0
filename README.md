@@ -1,5 +1,3 @@
-# conda-build-centos-7.0
+# conda-build-centos-7.2
 
-Vagrant config for building conda packages on GNU/Linux 
-
-See: http://ipscc.readthedocs.org
+Vagrant config for building conda packages on GNU/Linux

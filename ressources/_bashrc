@@ -20,7 +20,5 @@ if [ -f /etc/bash_completion ]; then
         . /etc/bash_completion
 fi
 
-VAGRANT_BOX_NAME=centos-7.0
+VAGRANT_BOX_NAME=centos-7.2
 VAGRANT_BOX_VERSION=0.1.0
-
-alias upload="anaconda upload --user inria-pro-sed --channel main --channel ${VAGRANT_BOX_NAME}-${VAGRANT_BOX_VERSION}" 

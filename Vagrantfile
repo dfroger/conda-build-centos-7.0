@@ -4,14 +4,14 @@
 Vagrant.configure(2) do |config|
 
   # Set vagrant box.
-  config.vm.box = "puppetlabs/centos-7.0-64-nocm"
+  config.vm.box = "puppetlabs/centos-7.2-64-nocm"
 
   #=============================================================================
   # Provisioning.
   #=============================================================================
 
   # Yum packages.
-  config.vm.provision "shell", 
+  config.vm.provision "shell",
     path: "script/yum.sh",
     privileged: true
 
@@ -38,7 +38,7 @@ Vagrant.configure(2) do |config|
   # Memory and CPU.
   config.vm.provider "virtualbox" do |v|
     v.memory = 4096
-    v.cpus = 8
+    v.cpus = 2
   end
 
 end
